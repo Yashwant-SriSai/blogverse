@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #E6E9EF;
+  --color-ink: #3B4252;
+  --color-muted: #7A8496;
+  --color-accent: #5B5FEF;
+  --color-accent-dark: #4548C4;
+  --color-coral: #F0684F;
+  --radius-neu: 20px;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-ink);
+}
+
+.neu-card {
+  background-color: var(--color-base);
+  border-radius: var(--radius-neu);
+  box-shadow: 8px 8px 16px #c5c9d0, -8px -8px 16px #ffffff;
+}
+.neu-btn {
+  background-color: var(--color-base);
+  border-radius: 1rem;
+  box-shadow: 4px 4px 8px #c5c9d0, -4px -4px 8px #ffffff;
+  padding: 0.625rem 1.25rem;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.neu-btn:active {
+  box-shadow: inset 4px 4px 8px #c5c9d0, inset -4px -4px 8px #ffffff;
+}
+.neu-btn-accent {
+  background-color: var(--color-accent);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.625rem 1.25rem;
+  font-weight: 600;
+  box-shadow: 4px 4px 8px #c5c9d0, -4px -4px 8px #ffffff;
+}
+.neu-btn-accent:hover {
+  background-color: var(--color-accent-dark);
+}
+.neu-input {
+  width: 100%;
+  background-color: var(--color-base);
+  border-radius: 1rem;
+  box-shadow: inset 4px 4px 8px #c5c9d0, inset -4px -4px 8px #ffffff;
+  padding: 0.625rem 1rem;
+  outline: none;
+  border: none;
+}
